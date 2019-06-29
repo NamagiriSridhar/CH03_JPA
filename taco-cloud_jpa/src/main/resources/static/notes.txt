@@ -1,0 +1,36 @@
+Future improvements
+-------------------
+
+*** If only one check box was selected and text box taco name was empty , 
+checkbox stays selected when errors get displayed. How is this the case?
+*** If more than one check box was was selected and text box taco name was empty , 
+checkboxes does not stay selected when errors get displayed. This makes sense however
+*** Option flour tortilla & corn tortilla should be radio buttons not check boxes(not now)
+*** gotta verify - when including jpa conversion is automatic - you can pass objects in forms - they 
+will get converted from strings to objects automatically?
+** some final - some not why??? why use final?
+** since Lombak provides constructors, why write constructors?
+
+JPA 
+*** They have many to many relationship between order and tacos. It should be one to many?
+
+
+
+Info
+******
+Passing ingredients as an array of strings vs array of ingredients
+ Processing design: Taco(id=null, createdAt=null, name=richard, ingredients=[FLTO, SLSA, SRCR])
+ Processing design: Taco(id=null, createdAt=null, name=LoveWins, ingredients=[Ingredient(id=SLSA, name=Salsa, type=SAUCE), Ingredient(id=SRCR, name=Sour Cream, type=SAUCE)])
+
+ 
+ logging.level.org.springframework=TRACE in application props for a detailed trace
+ 
+ disable dev tools to prevent constant execution
+ 
+ logger vs system.out.println (i dont need logger)
+ 2019-06-21 05:07:10.378  INFO 10048 --- [nio-8080-exec-8] tacos.controllers.DesignTacoController   :
+ Processing design: Taco(id=null, createdAt=null, name=richard, ingredients=[Ingredient(id=FLTO, name=Flour Tortilla, type=WRAP), Ingredient(id=GRBF, name=Ground Beef, type=PROTEIN), Ingredient(id=TMTO, name=Diced Tomatoes, type=VEGGIES), Ingredient(id=LETC, name=Lettuce, type=VEGGIES)])
+ 
+ Just comment annotations if you dont something to be detected . say @component in converter
+SOP Taco(id=null, createdAt=null, name=richard, ingredients=[Ingredient(id=FLTO, name=Flour Tortilla, type=WRAP), Ingredient(id=GRBF, name=Ground Beef, type=PROTEIN), Ingredient(id=TMTO, name=Diced Tomatoes, type=VEGGIES), Ingredient(id=LETC, name=Lettuce, type=VEGGIES)])
+ 
